@@ -2,6 +2,7 @@ package com.harshuu.tictactoe;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -12,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
     int flag =0;
     int count=0;
+    boolean gameover=false;
     Button button;
     Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9;
     String bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9;
@@ -24,6 +26,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         conv();
         button = findViewById(R.id.restart);
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+
+            }
+        },2000);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,10 +62,12 @@ public class MainActivity extends AppCompatActivity {
         btn9.setText("");
         flag = 0;
         count = 0;
+        gameover=false;
     }
     public void check(View view) {
+        if(gameover) return;
         Button btwCurrent = (Button) view;
-        if (btwCurrent.getText().toString().equals("")) {
+        if (btwCurrent.getText().toString().isEmpty()) {
             count++;
             if (flag == 0) {
                 btwCurrent.setText("X");
@@ -77,35 +87,47 @@ public class MainActivity extends AppCompatActivity {
                 bt8 = btn8.getText().toString();
                 bt9 = btn9.getText().toString();
 
-                if (bt1.equals(bt2) && bt2.equals(bt3) && !bt1.equals("")) {
-                    Toast.makeText(this, "Winner : " + bt1, Toast.LENGTH_SHORT).show();
-                    restart();
-                } else if (bt4.equals(bt5) && bt5.equals(bt6) && !bt4.equals("")) {
-                    Toast.makeText(this, "Winner : " + bt4, Toast.LENGTH_SHORT).show();
-                    restart();
-                } else if (bt7.equals(bt8) && bt8.equals(bt9) && !bt7.equals("")) {
-                    Toast.makeText(this, "Winner : " + bt7, Toast.LENGTH_SHORT).show();
-                    restart();
-                } else if (bt1.equals(bt4) && bt4.equals(bt7) && !bt1.equals("")) {
-                    Toast.makeText(this, "Winner : " + bt1, Toast.LENGTH_SHORT).show();
-                    restart();
-                } else if (bt2.equals(bt5) && bt5.equals(bt8) && !bt8.equals("")) {
-                    Toast.makeText(this, "Winner : " + bt2, Toast.LENGTH_SHORT).show();
-                    restart();
-                } else if (bt3.equals(bt6) && bt6.equals(bt9) && !bt3.equals("")) {
-                    Toast.makeText(this, "Winner : " + bt3, Toast.LENGTH_SHORT).show();
-                    restart();
-                } else if (bt1.equals(bt5) && bt5.equals(bt9) && !bt5.equals("")) {
-                    Toast.makeText(this, "Winner : " + bt1, Toast.LENGTH_SHORT).show();
-                    restart();
-                } else if (bt3.equals(bt5) && bt5.equals(bt7) && !bt3.equals("")) {
-                    Toast.makeText(this, "Winner : " + bt3, Toast.LENGTH_SHORT).show();
-                    restart();
+                if (bt1.equals(bt2) && bt2.equals(bt3) && !bt1.isEmpty()) {
+                    announceWinner(bt1);
+                    
+                } else if (bt4.equals(bt5) && bt5.equals(bt6) && !bt4.isEmpty()) {
+                    announceWinner(bt4);
+                    
+                } else if (bt7.equals(bt8) && bt8.equals(bt9) && !bt7.isEmpty()) {
+                    announceWinner(bt7);
+                    
+                } else if (bt1.equals(bt4) && bt4.equals(bt7) && !bt1.isEmpty()) {
+                    announceWinner(bt1);
+                    
+                } else if (bt2.equals(bt5) && bt5.equals(bt8) && !bt8.isEmpty()) {
+                    announceWinner(bt2);
+                    
+                } else if (bt3.equals(bt6) && bt6.equals(bt9) && !bt3.isEmpty()) {
+                    announceWinner(bt3);
+                    
+                } else if (bt1.equals(bt5) && bt5.equals(bt9) && !bt5.isEmpty()) {
+                    announceWinner(bt1);
+                    
+                } else if (bt3.equals(bt5) && bt5.equals(bt7) && !bt3.isEmpty()) {
+                    announceWinner(bt3);
+                    
                 } else if (count == 9) {
-                    Toast.makeText(this, "DRAW", Toast.LENGTH_SHORT).show();
-                    restart();
+                    announceDraw();
+                    
                 }
             }
         }
+    }
+    private void announceWinner(String winner) {
+        Toast.makeText(this, "Winner: " + winner, Toast.LENGTH_SHORT).show();
+        // Delay the restart by 2 seconds
+        gameover=true;
+        new Handler().postDelayed(this::restart, 1000);
+    }
+    private void announceDraw() {
+        Toast.makeText(this, "DRAW", Toast.LENGTH_SHORT).show();
+        // Delay the restart by 2 seconds
+        gameover=true;
+        new Handler().postDelayed(this::restart, 1000);
     }
     }

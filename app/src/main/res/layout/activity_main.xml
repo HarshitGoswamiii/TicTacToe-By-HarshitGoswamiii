@@ -4,136 +4,142 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#1c1f52"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="300dp"
         android:layout_height="150dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="24dp"
         android:contentDescription="@string/todo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/tic" />
+        app:srcCompat="@drawable/tiv" />
 
     <GridLayout
         android:id="@+id/gridLayout"
-        android:layout_width="255dp"
-        android:layout_height="255dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
         android:columnCount="3"
+        android:padding="10dp"
         android:rowCount="3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.205">
+        app:layout_constraintVertical_bias="0.117">
 
         <Button
             android:id="@+id/btns1"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            style="@style/MyButton"
+            android:layout_row="0"
+            android:layout_column="0"
             android:layout_margin="5dp"
-            android:background="@drawable/rounded_buttons"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/rounded_button"
             android:onClick="check"
-            android:padding="5dp"
-            android:textSize="20sp" />
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
             android:id="@+id/btns2"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_margin="5dp"
-            android:background="@drawable/rounded_buttons"
+            style="@style/MyButton"
+            android:background="@drawable/rounded_button"
             android:onClick="check"
-            android:textSize="20sp"
-            android:padding="5dp" />
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
             android:id="@+id/btns3"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:textSize="20sp"
-            android:layout_margin="5dp"
-            android:background="@drawable/rounded_buttons"
+            style="@style/MyButton"
+            android:background="@drawable/rounded_button"
+            android:contentDescription="@string/f"
             android:onClick="check"
-            android:padding="5dp" />
+            tools:ignore="DuplicateSpeakableTextCheck" />
 
         <Button
             android:id="@+id/btns4"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:textSize="20sp"
-            android:layout_margin="5dp"
-            android:background="@drawable/rounded_buttons"
-            android:onClick="check"
-            android:padding="5dp" />
+            style="@style/MyButton"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/rounded_button"
+            android:contentDescription="@string/f"
+            android:onClick="check" />
 
         <Button
             android:id="@+id/btns5"
-            android:textSize="20sp"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_margin="5dp"
-            android:background="@drawable/rounded_buttons"
-            android:onClick="check"
-            android:padding="5dp" />
+            style="@style/MyButton"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/rounded_button"
+            android:contentDescription="@string/f"
+            android:onClick="check" />
 
         <Button
             android:id="@+id/btns6"
-            android:layout_width="75dp"
-            android:textSize="20sp"
-            android:layout_height="75dp"
-            android:layout_margin="5dp"
-            android:background="@drawable/rounded_buttons"
+            style="@style/MyButton"
+            android:background="@drawable/rounded_button"
             android:onClick="check"
-            android:padding="5dp" />
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
             android:id="@+id/btns7"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_margin="5dp"
-            android:textSize="20sp"
-            android:background="@drawable/rounded_buttons"
+            style="@style/MyButton"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/rounded_button"
             android:onClick="check"
-            android:padding="5dp" />
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
             android:id="@+id/btns8"
-            android:textSize="20sp"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_margin="5dp"
-            android:background="@drawable/rounded_buttons"
+            style="@style/MyButton"
+            android:background="@drawable/rounded_button"
             android:onClick="check"
-            android:padding="5dp" />
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
             android:id="@+id/btns9"
-            android:textSize="20sp"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_margin="5dp"
-            android:background="@drawable/rounded_buttons"
+            style="@style/MyButton"
+            android:background="@drawable/rounded_button"
             android:onClick="check"
-            android:padding="5dp" />
+            tools:ignore="SpeakableTextPresentCheck" />
 
     </GridLayout>
 
     <Button
-        android:id="@+id/restart"
-        android:layout_width="150dp"
-        android:layout_height="48dp"
-        android:text="@string/restart_game"
+        android:id="@+id/Rules"
+        style="@style/restartbutton"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="75dp"
+        android:background="@drawable/rounded_button_new"
+        android:text="@string/game_rules"
+        android:textColor="#FEFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restart"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/restart"
+        style="@style/restartbutton"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_button_new"
+        android:text="@string/reset_game"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/Rules"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gridLayout"
-        app:layout_constraintVertical_bias="0.282" />
+        app:layout_constraintVertical_bias="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

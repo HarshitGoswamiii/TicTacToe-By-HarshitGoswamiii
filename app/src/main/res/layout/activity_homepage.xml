@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E2844"
+    tools:context=".Homepage">
+
+    <EditText
+        android:id="@+id/playertwo"
+        style="@style/MyTextview"
+        android:inputType="text"
+        android:layout_width="295dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints="Player 2"
+        android:background="@drawable/login"
+        android:ems="10"
+        android:hint="@string/player_2_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/player_one" />
+
+    <EditText
+        android:id="@+id/player_one"
+        style="@style/MyTextview"
+        android:layout_width="295dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="56dp"
+        android:autofillHints="Player 1"
+        android:background="@drawable/login"
+        android:ems="10"
+        android:hint="@string/player_1_name"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/playertwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="288dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#029BCD"
+        android:text="@string/start_game"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playertwo"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="324dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="168dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/enter_players_names"
+        android:textAlignment="center"
+        android:textColor="#FDFBFB"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/x"
+        android:textAlignment="center"
+        android:textColor="#DE1452"
+        android:textSize="52sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/player_one"
+        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="O"
+        android:textColor="#FDD320"
+        android:textSize="52sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/start"
+        app:layout_constraintEnd_toStartOf="@+id/playertwo"
+        app:layout_constraintHorizontal_bias="0.655"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
