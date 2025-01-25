@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
     private void announceDraw() {
         Toast.makeText(this, "DRAW", Toast.LENGTH_SHORT).show();
         // Delay the restart by 2 seconds
-        gameover = true;
+        gameover=true;
         new Handler().postDelayed(this::restart, 1000);
     }
     }
