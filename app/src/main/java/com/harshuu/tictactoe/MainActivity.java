@@ -118,13 +118,15 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-    private void announceWinner(String winner) {
+
+    private void announceWinner(String winner) { //For Declaration of Winner
         Toast.makeText(this, "Winner: " + winner, Toast.LENGTH_SHORT).show();
         // Delay the restart by 2 seconds
         gameover = true;
         new Handler().postDelayed(this::restart, 1000);
     }
-    private void announceDraw() {
+
+    private void announceDraw() {  //    For Declaring Draw : If no one wins
         Toast.makeText(this, "DRAW", Toast.LENGTH_SHORT).show();
         // Delay the restart by 2 seconds
         gameover=true;
