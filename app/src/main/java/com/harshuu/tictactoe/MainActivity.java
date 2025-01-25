@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 //        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        conv();
+        conv()  ;
         button = findViewById(R.id.restart);
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -121,13 +121,13 @@ public class MainActivity extends AppCompatActivity {
     private void announceWinner(String winner) {
         Toast.makeText(this, "Winner: " + winner, Toast.LENGTH_SHORT).show();
         // Delay the restart by 2 seconds
-        gameover=true;
+        gameover = true;
         new Handler().postDelayed(this::restart, 1000);
     }
     private void announceDraw() {
         Toast.makeText(this, "DRAW", Toast.LENGTH_SHORT).show();
         // Delay the restart by 2 seconds
-        gameover=true;
+        gameover = true;
         new Handler().postDelayed(this::restart, 1000);
     }
     }
