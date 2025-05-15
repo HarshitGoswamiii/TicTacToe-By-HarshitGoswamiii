@@ -23,7 +23,7 @@
 
 ## 📲 Download the APK
 
-[![Get it on GitHub](https://img.shields.io/badge/Get%20it%20on-GitHub-24292e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/HarshitGoswamiii/TicTacToe-By-HarshitGoswamiii/tiktokRelease/tictactoe.apk)
+[![Get it on GitHub](https://img.shields.io/badge/Get%20it%20on-GitHub-24292e?style=for-the-badge&logo=github&logoColor=white)](./tiktokRelease/tictactoe.apk)
 
 > Or grab it from the [Releases Page](https://github.com/tiktokRelease/tictactoe.apk) for version history and changelogs.
 
