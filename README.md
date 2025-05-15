@@ -42,5 +42,8 @@ A simple and fun **Tic Tac Toe** game built for Android. Whether you’re feelin
 
 ## 🚀 Screenshots
 
-> *You can add screenshots in a `/screenshots` folder and link them here.*
+![Home Screen](screenshots/home.png)
+![Game Screen](screenshots/game.png)
+![Victory Screen](screenshots/victory.png)
+
 
