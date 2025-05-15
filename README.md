@@ -9,7 +9,7 @@ A simple and fun **Tic Tac Toe** game built for Android. Whether you’re feelin
 
 ---
 
-📱 Features
+## 📱 Features
 - 🎮 Two-player mode on the same device
 - 🤖 Play against a smart AI (coming soon, maybe 👀)
 - 🧼 Clean and user-friendly UI
