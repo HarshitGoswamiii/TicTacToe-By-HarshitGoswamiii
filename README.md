@@ -43,9 +43,9 @@ A simple and fun **Tic Tac Toe** game built for Android. Whether you’re feelin
 ## 🚀 Screenshots
 
 <p align="center">
-  <img src="screenshots/splashscreen.png" alt="Splash Screen" width="10%" />
-  <img src="screenshots/Gameplay.jpg" alt="Game Screen" width="10%" />
-  <img src="screenshots/Homescreen.jpg" alt="Home Screen" width="10%" />
+  <img src="screenshots/splashscreen.png" alt="Splash Screen" width="20%" />
+  <img src="screenshots/Homescreen.jpg" alt="Home Screen" width="20%" />
+  <img src="screenshots/Gameplay.jpg" alt="Game Screen" width="20%" />
 </p>
 
 
