@@ -77,7 +77,7 @@ Feel free to fork, star, and suggest improvements. Got ideas for better AI? Want
 
 ## ✨ Credits
 
-Made with ❤️ by #Harshit #Goswami  
+Made with ❤️ by **Harshit Goswami**  
 [GitHub](https://github.com/HarshitGoswamiii) • [LinkedIn](https://www.linkedin.com/in/harshitgoswamiii/) 
 
 ---
