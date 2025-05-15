@@ -9,15 +9,12 @@ A simple and fun **Tic Tac Toe** game built for Android. Whether you’re feelin
 
 ---
 
-## 🕹️ Features
-
-- ✅ Classic 3x3 Tic Tac Toe gameplay  
-- 👤 Single-player mode (Play against AI)  (UPCOMING)
-- 👥 Two-player mode (Play on the same device)  
-- 🧠 AI that offers a fair challenge  
-- 🎨 Clean, user-friendly interface  
-- ⚡ Lightweight and fast performance
-
+📱 Features
+- 🎮 Two-player mode on the same device
+- 🤖 Play against a smart AI (coming soon, maybe 👀)
+- 🧼 Clean and user-friendly UI
+- ⚡ Smooth performance with lightweight APK
+- 🕹️ Classic 3x3 grid with instant win detection
 ---
 
 ## 📦 APK Information
