@@ -25,13 +25,13 @@
 
 [![Get it on GitHub](https://img.shields.io/badge/Get%20it%20on-GitHub-24292e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/HarshitGoswamiii/TicTacToe-By-HarshitGoswamiii/tiktokRelease/tictactoe.apk)
 
-> Or grab it from the [Releases Page](https://github.com/your-username/tictactoe/releases) for version history and changelogs.
+> Or grab it from the [Releases Page](https://github.com/tiktokRelease/tictactoe.apk) for version history and changelogs.
 
 ---
 
 ## 📦 APK Details
 
-- **File:** [`tictactoe.apk`](./tictactoe.apk)  
+- **File:** [`tictactoe.apk`](./tiktokRelease/tictactoe.apk)  
 - **Platform:** Android  
 - **Min SDK:** *Add this info if you know it*  
 - **Target SDK:** *Add if known*  
@@ -44,8 +44,8 @@
 
 <p align="center">
   <img src="screenshots/splashscreen.png" alt="Splash Screen" width="20%" />
-  <img src="screenshots/Gameplay.jpg" alt="Game Screen" width="20%" />
   <img src="screenshots/Homescreen.jpg" alt="Home Screen" width="20%" />
+    <img src="screenshots/Gameplay.jpg" alt="Game Screen" width="20%" />
 </p>
 
 ---
@@ -62,7 +62,7 @@
 ## 🛠️ Tech Stack
 
 - 💻 Android Studio  
-- 🧾 Java / Kotlin *(specify your language)*  
+- 🧾 Java   
 - 🎨 XML for layout design  
 - 🧪 Tested on multiple devices
 
