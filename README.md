@@ -22,7 +22,7 @@ A simple and fun **Tic Tac Toe** game built for Android. Whether you’re feelin
 
 ## 📦 APK Information
 
-- **File:** [`tictactoe.apk`](./tictactoe.apk)  
+- **File:** [`tictactoe.apk`](./tiktokRelease/tictactoe.apk)  
 - **Platform:** Android  
 - **Min SDK:** *Add the actual minimum SDK version here (e.g., 21 for Android 5.0)*  
 - **Target SDK:** *Add the target SDK if known*  
@@ -33,7 +33,7 @@ A simple and fun **Tic Tac Toe** game built for Android. Whether you’re feelin
 
 ## 📲 Installation
 
-1. [Download the APK](./tictactoe.apk) or from the [Releases](../../releases) section.
+1. [Download the APK](./tiktokRelease/tictactoe.apk) or from the [Releases](../../releases) section.
 2. Enable `Install from Unknown Sources` on your Android device (Settings > Security).
 3. Tap on the APK to install.
 4. Launch and start playing!
